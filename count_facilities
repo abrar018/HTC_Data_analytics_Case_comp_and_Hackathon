@@ -1,0 +1,9 @@
+import pandas as pd
+
+# Read the CSV file (adjust filename as needed)
+df = pd.read_csv('Geoscout Facility Data Dump.csv', low_memory=False)
+
+# Count distinct plant names in the "Plant Name" column
+distinct_count = df['Plant Name'].nunique()
+
+print("Number of distinct Plant Names:", distinct_count)
